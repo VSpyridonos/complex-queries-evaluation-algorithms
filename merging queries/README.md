@@ -1,0 +1,1 @@
+The following programs read the dataset files, compute and write results in an output file at the same time without loading all data in memory. This means that results are produced while the file lines are being read and before all data is read.
