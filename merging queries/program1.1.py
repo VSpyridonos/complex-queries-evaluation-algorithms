@@ -1,4 +1,4 @@
-# Description: For every title which has more than one director, find the name of the title and the directors' id
+# Description: For each title that has more than one director, find the name of the title and the directors' id
 
 import csv
 
@@ -24,7 +24,7 @@ with open('title.basics', 'r') as file1, open('title.crew', 'r') as file2, open(
             else:                                       # if tconst fields are different
                 if(s1[0] > s2[0]):                      # if the first file's tconst field is bigger than the second file's one
                     s2 = next(tsv_reader2)              # move second file's line pointer
-                else:                                   # f the second file's tconst field is bigger than the first file's one
+                else:                                   # if the second file's tconst field is bigger than the first file's one
                     s1 = next(tsv_reader1)              # move first file's line pointer
         except StopIteration:
             break
