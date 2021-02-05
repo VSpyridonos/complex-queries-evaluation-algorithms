@@ -1,1 +1,1 @@
-The following programs read the dataset files, compute and write results in an output file at the same time without loading all data in memory. This means that results are produced while the file lines are being read and before all data is read.
+The following programs read the dataset files, compute and write results in an output file at the same time without loading all data in memory. This means that results are produced while the file lines are being read and before all data is read. This is possible because the dataset files have been sorted by the field tconst.
